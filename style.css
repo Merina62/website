@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:rgba(240, 240, 244, 0.896);
+    box-sizing: border-box;
+  
+}
+.book{
+   position: relative;
+    width: 100%;
+    height: 10%;
+   padding-left:30px;
+  
+}
+nav{
+    display: flex;
+    width: 92%;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   font-size:25px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav h1{
+   font-size:30px;
+   font-family: 'Times New Roman', Times, serif;
+   color:rgb(177, 136, 3);
+   
+}
+nav ul li a:hover{
+    color: rgb(134, 156, 255);
+}
+
+
+/* CSS of home page i.e index--> */
+
+
+.pen{
+    display: flex;
+    padding-bottom: 78px;
+}
+.content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 150px;
+    padding-left:90px;
+    width:100%; 
+    flex-direction: column;
+}
+
+.content h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+.content p{
+    font-size:25px;
+}
+.content h1 span{
+    color:rgb(146, 117, 4);
+    font-size: 45px;
+}
+.button{
+    margin-top: 20px;
+}
+.button a{
+    display: inline-block;
+    padding: 10px 50px;
+    background: rgb(177, 164, 140);
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(95, 71, 71);
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+
+.button a:hover {
+    background: black;
+    color: rgb(177, 164, 140);
+  }
+.photo{
+    width: 50%;
+    padding-top: 20px;
+    
+}
+.photo
+   img{
+        width:100%;
+        height:500px;
+        padding-left: 100px ;
+        padding-right: 100px;
+    }
+
+.about{
+    display: flex;
+}
+
+.aboutme{
+    width:100%;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.aboutme h1{
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    color: chocolate;
+}
+.aboutme p{
+    line-height: 2;
+    text-align: justify;
+    font-size: 21px;
+    font-weight: 700;
+}
+.photo{
+    width: 100%;
+    padding-top: 100px;
+}
+
+/*
+Responsive Web Design.
+-----------------------
+1024   - tablet
+768    - phone
+420    - phone portrait
+
+*/
+
+
+@media (max-width:1000px){
+    .about{
+        flex-direction: column;
+    }
+
+}
+@media (max-width:1000px){
+    .pen{
+        flex-direction: column;
+    }
+
+}
